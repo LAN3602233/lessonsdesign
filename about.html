@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>相关知识-生态文明网</title>
+    <!--图标库-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!--css样式-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <!--js样式-->
+    <script src="js/carousel.js"></script>
+    <script src="js/search.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="#home" class="logo-link">
+            <img src="images/logo.jpg" alt="网站Logo" class="logo-img" />
+          </a>
+        </div>
+
+        <!--导航链接-->
+        <div class="nav-links">
+          <a href="index.html" class="navbar-link">首页</a>
+          <a href="news.html" class="navbar-link">实践与政策</a>
+
+          <!-- 下拉菜单 - 相关知识 -->
+          <div class="dropdown">
+            <a href="about.html" class="navbar-link active">相关知识</a>
+            <div class="dropdown-content">
+              <a href="#global-environment"
+                ><i class="fa fa-globe"></i> 全球性环境</a
+              >
+              <a href="#sustainable-development"
+                ><i class="fa fa-leaf"></i> 可持续发展</a
+              >
+              <a href="#garbage-classification"
+                ><i class="fa fa-recycle"></i> 垃圾分类</a
+              >
+              <a href="#energy-conservation"
+                ><i class="fa fa-bolt"></i> 节能减排</a
+              >
+              <a href="#green-travel"><i class="fa fa-bicycle"></i> 绿色出行</a>
+              <a href="#ecosystem"><i class="fa fa-tree"></i> 生态系统</a>
+              <a href="#wetland-protection"
+                ><i class="fa fa-tint"></i> 湿地保护</a
+              >
+              <a href="#marine-ecology"
+                ><i class="fa fa-anchor"></i> 海洋生态</a
+              >
+              <a href="#soil-salinization"
+                ><i class="fa fa-map"></i> 土壤次生盐碱化</a
+              >
+              <a href="#red-tide"><i class="fa fa-tint"></i> 赤潮现象</a>
+              <a href="#biodiversity"
+                ><i class="fa fa-paw"></i> 生物多样性保护</a
+              >
+            </div>
+          </div>
+
+          <a href="knowledgequiz.html" class="navbar-link">知识问答</a>
+        </div>
+
+        <!-- 搜索框（居中） -->
+        <div class="search-container">
+          <form action="/search" method="GET" class="search-form">
+            <input
+              type="text"
+              placeholder="搜索..."
+              name="q"
+              class="search-input"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- 登录/注册 -->
+        <div class="auth-links">
+          <a href="login.html" class="auth-link">登录</a>
+          <span class="divider">|</span>
+          <a href="login.html" class="auth-link">注册</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="introcontain">
+        <header>
+          <h1><i class="fa fa-envelope"></i> "生态文明与环境保护"</h1>
+          <p class="subtitle">地球不仅仅是人类的家园，更是所有生物的家园。</p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item" id="global-environment">
+            <div class="timeline-year">全球性环境</div>
+            <div class="timeline-content">
+              <img
+                src="images/全球环境问题.webp"
+                alt="全球环境问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                包括全球气候变暖、臭氧空洞、酸雨等。全球气候变暖的主要原因是大量燃烧矿物燃料排放二氧化碳以及森林破坏
+                <span class="quote-author">— 全球环境问题</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="sustainable-development">
+            <div class="timeline-year">可持续发展</div>
+            <div class="timeline-content">
+              <img
+                src="images/可持续发展问题.png"
+                alt="可持续发展问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                可持续发展包括经济、生态和社会三个方面的可持续发展，旨在既满足当代人的需求，又不对后代人满足其自身需求能力构成危害
+                <span class="quote-author">— 可持续发展</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="garbage-classification">
+            <div class="timeline-year">垃圾分类</div>
+            <div class="timeline-content">
+              <img
+                src="images/垃圾分类问题.jpg"
+                alt="垃圾分类问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                垃圾分类是环保生活的重要组成部分，通过将垃圾分为可回收物、有害垃圾、厨余垃圾和其他垃圾，可以有效减少垃圾填埋和焚烧量，提高资源回收利用率。
+                <span class="quote-author">— 垃圾分类</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="energy-conservation">
+            <div class="timeline-year">节能减排</div>
+            <div class="timeline-content">
+              <img
+                src="images/节能减排问题.jpg"
+                alt="节能减排问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                在日常生活中，可以通过节约用电、使用节能电器、减少空调使用等方式降低能源消耗
+                <span class="quote-author">— 节能减排</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="green-travel">
+            <div class="timeline-year">绿色出行</div>
+            <div class="timeline-content">
+              <img
+                src="images/绿色出行问题.jpg"
+                alt="绿色出行问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                选择步行、骑自行车或乘坐公共交通工具，减少私家车使用，有助于降低碳排放
+                <span class="quote-author">— 绿色出行</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="ecosystem">
+            <div class="timeline-year">生态系统</div>
+            <div class="timeline-content">
+              <img
+                src="images/生态系统问题.jpg"
+                alt="生态系统问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                生态系统由生物成分（生物群落和种群）和非生物成分（非活性的环境物质和能量）组成，包括陆地生态系统和水生生态系统，
+                湿地、森林、海洋被誉为地球三大生态环境系统，被誉为“地球之肾”、“天然水库”、“物种宝库”。
+                具体也可以分为八大生态系统：森林生态系统、草原生态系统、海洋生态系统、淡水生态系统（分为湖泊生态系统、池塘生态系统、河流生态系统等）、农田生态系统、冻原生态系统、湿地生态系统、城市生态系统。
+                地球最大的生态系统是生物圈；最为复杂的生态系统是热带雨林生态系统，人类主要生活在以城市和农田为主的人工生态系统中。
+                <span class="quote-author">— 生态系统</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="wetland-protection">
+            <div class="timeline-year">湿地保护</div>
+            <div class="timeline-content">
+              <img
+                src="images/湿地保护.jpg"
+                alt="湿地保护"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                湿地被称为“地球之肾”，具有调节气候、蓄洪防洪、淤积造陆、降解污染等功能。保护湿地的措施包括禁止过度开垦、退耕还湿、退耕还湖等
+                <span class="quote-author">— 湿地保护</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="marine-ecology">
+            <div class="timeline-year">海洋生态</div>
+            <div class="timeline-content">
+              <img
+                src="images/海洋生态问题.jpg"
+                alt="海洋生态问题"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                海洋酸化是由于海水溶解更多的大气二氧化碳而导致的海水pH降低的过程，对海洋生物和生态系统造成威胁
+                <span class="quote-author">— 海洋生态问题</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="soil-salinization">
+            <div class="timeline-year">土壤次生盐碱化</div>
+            <div class="timeline-content">
+              <img
+                src="images/土地次生盐碱化.jfif"
+                alt="土地次生盐碱化"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                我国黄淮海平原、宁夏平原、河套平原等地易发生土壤次生盐碱化，其治理措施包括引淡淋盐、井排井灌、生物措施、农田覆盖等
+                <span class="quote-author">— 土地次生盐碱化</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="red-tide">
+            <div class="timeline-year">赤潮现象</div>
+            <div class="timeline-content">
+              <img
+                src="images/赤潮现象.jfif"
+                alt="赤潮现象"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                赤潮是由于水体富营养化导致藻类大量繁殖的现象，主要发生在珠江口、杭州湾、渤海等海域，其形成原因包括气温高、静水、静风以及沿岸地区大量排放污水
+                <span class="quote-author">— 赤潮现象</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="biodiversity">
+            <div class="timeline-year">生物多样性保护</div>
+            <div class="timeline-content">
+              <img
+                src="images/生物多样性.webp"
+                alt="生物多样性"
+                class="timeline-img"
+              />
+              <div class="timeline-text">
+                生物多样性是维持生态系统稳定的重要因素，保护生物多样性需要减少栖息地破坏、打击非法贸易、加强生态保护区建设等
+                <span class="quote-author">— 生物多样性</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--------------Footer--------------->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>姓名：蓝舒芬 | 班级：计算机23-3班 | 学号：231002618</p>
+      </div>
+    </footer>
+
+    <!--js样式-->
+    <!-- <script src="js/carousel.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 平滑滚动函数
+        function smoothScroll(target) {
+          const element = document.querySelector(target);
+          if (element) {
+            const offset = 80; // 导航栏高度
+            const elementPosition =
+              element.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: elementPosition - offset,
+              behavior: "smooth",
+            });
+          }
+        }
+
+        // 为下拉菜单添加点击事件
+        document.querySelectorAll(".dropdown-content a").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            smoothScroll(targetId);
+          });
+        });
+
+        // 时间轴动画
+        const timelineItems = document.querySelectorAll(".timeline-item");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+              }
+            });
+          },
+          {
+            threshold: 0.3,
+            rootMargin: "0px 0px -100px 0px",
+          }
+        );
+
+        timelineItems.forEach((item) => {
+          observer.observe(item);
+        });
+
+        // 初始激活第一个项目
+        if (timelineItems.length > 0) {
+          timelineItems[0].classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

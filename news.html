@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>生态新闻-生态文明网</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!--css样式-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/news.css" />
+    <!--js样式-->
+    <!-- <script src="js/carousel.js"></script> -->
+  </head>
+  <body>
+    <!-- 导航栏（复用，保持全站一致） -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo-container">
+          <a href="index.html" class="logo-link">
+            <img src="images/logo.jpg" alt="网站Logo" class="logo-img" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="navbar-link">首页</a>
+          <a href="news.html" class="navbar-link active">实践与政策</a>
+          <a href="about.html" class="navbar-link">相关知识</a>
+          <a href="knowledgequiz.html" class="navbar-link">知识问答</a>
+        </div>
+        <div class="search-container">
+          <form action="/search" method="GET" class="search-form">
+            <input
+              type="text"
+              placeholder="搜索生态新闻..."
+              name="q"
+              class="search-input"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="auth-links">
+          <a href="login.html" class="auth-link">登录</a>
+          <span class="divider">|</span>
+          <a href="login.html" class="auth-link">注册</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 主要内容区：热门新闻轮播 + 左侧焦点 + 右侧新闻列表 + 侧边热榜 -->
+    <!-- 主要内容区 -->
+    <main class="news-page container">
+      <!-- 热门新闻轮播 -->
+      <section class="carousel-container">
+        <div id="newsCarousel" class="carousel-slides">
+          <!-- 轮播项1 -->
+          <div class="carousel-slide">
+            <a href="#" class="block h-full">
+              <img
+                src="images/国家生态保护政策.avif"
+                alt="国家生态保护政策"
+                class="w-full h-full object-cover"
+              />
+              <div class="slide-caption">
+                <h3>国家发布新一轮生态保护政策</h3>
+                <p>
+                  涵盖森林、湿地、海洋三大生态系统保护措施，推动绿色发展新格局
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- 轮播项2 -->
+          <div class="carousel-slide">
+            <a href="#" class="block h-full">
+              <img
+                src="images/城市绿色发展.avif"
+                alt="城市绿色发展"
+                class="w-full h-full object-cover"
+              />
+              <div class="slide-caption">
+                <h3>全国绿色城市建设取得显著成效</h3>
+                <p>30个城市获评国家级生态园林城市，城市绿化覆盖率提升至45%</p>
+              </div>
+            </a>
+          </div>
+          <!-- 轮播项3 -->
+          <div class="carousel-slide">
+            <a href="#" class="block h-full">
+              <img
+                src="images/生物多样性.avif"
+                alt="生物多样性"
+                class="w-full h-full object-cover"
+              />
+              <div class="slide-caption">
+                <h3>中国生物多样性保护白皮书发布</h3>
+                <p>珍稀物种数量同比增长15%，生态恢复成效显著</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 导航按钮 -->
+        <button id="newsPrevBtn" class="carousel-control left-4">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <button id="newsNextBtn" class="carousel-control right-4">
+          <i class="fa fa-chevron-right"></i>
+        </button>
+
+        <!-- 指示点 -->
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-index="0"></button>
+          <button class="carousel-dot" data-index="1"></button>
+          <button class="carousel-dot" data-index="2"></button>
+        </div>
+      </section>
+
+      <!-- 左侧焦点区域 -->
+      <aside class="news-aside">
+        <!-- 焦点图/专题 -->
+        <div class="focus-card">
+          <img
+            src="images/丝路友谊.avif"
+            alt="丝路友谊 偕行致远"
+            class="focus-img"
+          />
+          <h3 class="focus-title">丝路友谊 偕行致远</h3>
+          <p class="focus-desc">
+            聚焦生态合作，共建绿色丝绸之路，推动区域可持续发展
+          </p>
+        </div>
+        <!-- 热点短讯 -->
+        <ul class="hot-list">
+          <li>中东不稳，天下难安，多国呼吁加强区域生态安全合作</li>
+          <li>一首诗、两部剧，读懂"中国-中亚精神"中的生态智慧</li>
+          <li>南方多地强降雨持续，气象预警升级，专家解读气候变化影响</li>
+          <li>全球生态峰会将于下月在北京召开，聚焦气候变化应对</li>
+          <li>国家公园建设加速推进，新增5个试点区域</li>
+        </ul>
+        <!-- 专题入口 -->
+        <div class="special-entry">
+          <img src="images/city.jpg" alt="专题" class="special-img" />
+          <p>生态专题 | 点击探索</p>
+        </div>
+      </aside>
+
+      <!-- 中间新闻列表 -->
+      <section class="news-list">
+        <h2 class="section-title">要闻</h2>
+        <ul class="main-news">
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              神舟二十号乘组将于近日择机实施第二次出舱活动，开展空间生态实验
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              近6成统筹区实现生育津贴直接发放至个人，生育政策与生态保护同步推进
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              2025港澳台大学生网信企业实习计划(深圳)启动，聚焦绿色科技领域
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              国办发布进一步规范和提升12345热线服务的意见，增设生态环保专线
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              长江流域生态保护取得新突破，珍稀鱼类种群数量明显恢复
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              国家林草局：今年已完成造林面积超过6000万亩
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              碳中和目标推动新能源产业快速发展，风电光伏装机量创新高
+            </a>
+          </li>
+          <li>
+            <a href="#" class="news-item">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              湿地保护法实施一周年，全国新增国际重要湿地15处
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 右侧热榜/侧边栏 -->
+      <aside class="news-sidebar">
+        <h3 class="sidebar-title">中新热榜</h3>
+        <ol class="hot-rank">
+          <li>
+            <a href="#">@全国考生 31省份2025高考分数线公布，多省新增生态专业</a>
+          </li>
+          <li>
+            <a href="#">朱民：未来18个月，中国将出现超百项绿色科技创新成果</a>
+          </li>
+          <li>
+            <a href="#"
+              >中国代表：美国才是伊核危机的始作俑者，破坏地区生态安全</a
+            >
+          </li>
+          <li>
+            <a href="#">海洋生态保护新规出台，严禁破坏性捕捞行为</a>
+          </li>
+          <li>
+            <a href="#"
+              >"绿水青山就是金山银山"理念提出20周年，各地举行纪念活动</a
+            >
+          </li>
+          <li>
+            <a href="#">新能源汽车销量再创新高，市场渗透率突破40%</a>
+          </li>
+          <li>
+            <a href="#">联合国报告：中国可再生能源投资领跑全球</a>
+          </li>
+          <li>
+            <a href="#">野生大熊猫数量增至1864只，栖息地面积扩大23%</a>
+          </li>
+        </ol>
+        <!-- 广告/专题图 -->
+        <div class="sidebar-ad">
+          <img src="images/news1.jpg" alt="广告" />
+          <p>话改革·建新功 | 绿色转型进行时</p>
+        </div>
+      </aside>
+    </main>
+
+    <!--------------Footer--------------->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>姓名：蓝舒芬 | 班级：计算机23-3班 | 学号：231002618</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+      // 轮播图功能
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("newsCarousel");
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        const dots = document.querySelectorAll(".carousel-dot");
+        const prevBtn = document.getElementById("newsPrevBtn");
+        const nextBtn = document.getElementById("newsNextBtn");
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        // 更新轮播图位置
+        function updateCarousel() {
+          carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+          // 更新指示点状态
+          dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+          });
+        }
+
+        // 下一张
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateCarousel();
+        }
+
+        // 上一张
+        function prevSlide() {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateCarousel();
+        }
+
+        // 自动播放
+        let slideInterval = setInterval(nextSlide, 5000);
+
+        // 鼠标悬停时暂停自动播放
+        carousel.addEventListener("mouseenter", () => {
+          clearInterval(slideInterval);
+        });
+
+        // 鼠标离开时恢复自动播放
+        carousel.addEventListener("mouseleave", () => {
+          slideInterval = setInterval(nextSlide, 5000);
+        });
+
+        // 添加按钮事件
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        // 添加指示点事件
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            updateCarousel();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

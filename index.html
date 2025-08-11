@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>生态文明网</title>
+    <!--图标库-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!--css样式-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!--js样式-->
+    <script src="js/carousel.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/timeline.js"></script>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo-container">
+          <a href="#home" class="logo-link">
+            <img src="images/logo.jpg" alt="网站Logo" class="logo-img" />
+          </a>
+        </div>
+
+        <!--导航链接-->
+        <div class="nav-links">
+          <a href="index.html" class="navbar-link active">首页</a>
+          <a href="news.html" class="navbar-link">实践与政策</a>
+          <a href="about.html" class="navbar-link">相关知识</a>
+          <a href="knowledgequiz.html" class="navbar-link">知识问答</a>
+        </div>
+
+        <!-- 搜索框（居中） -->
+        <div class="search-container">
+          <form action="/search" method="GET" class="search-form">
+            <input
+              type="text"
+              placeholder="搜索..."
+              name="q"
+              class="search-input"
+            />
+            <button type="submit" class="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- 登录/注册 -->
+        <div class="auth-links">
+          <a href="login.html" class="auth-link">登录</a>
+          <span class="divider">|</span>
+          <a href="login.html" class="auth-link">注册</a>
+        </div>
+      </div>
+    </nav>
+    <!-- 主要内容区 -->
+    <main class="content container">
+      <!-- 轮播图区域 -->
+      <section class="mb-12">
+        <div class="carousel-container">
+          <div id="carousel" class="carousel-slides">
+            <!-- 轮播项1 -->
+            <div class="carousel-slide">
+              <a href="#" class="block h-full">
+                <img
+                  src="images/mountain.jpg"
+                  alt="自然风光"
+                  class="w-full h-full object-cover"
+                />
+                <div class="slide-caption">
+                  <h3>壮丽山脉</h3>
+                  <p>探索大自然的鬼斧神工</p>
+                </div>
+              </a>
+            </div>
+            <!-- 轮播项2 -->
+            <div class="carousel-slide">
+              <a href="#" class="block h-full">
+                <img
+                  src="images/water.jpg"
+                  alt="宁静湖泊"
+                  class="w-full h-full object-cover"
+                />
+                <div class="slide-caption">
+                  <h3>宁静湖泊</h3>
+                  <p>感受大自然的宁静与平和</p>
+                </div>
+              </a>
+            </div>
+            <!-- 轮播项3 -->
+            <div class="carousel-slide">
+              <a href="#" class="block h-full">
+                <img
+                  src="images/city.jpg"
+                  alt="城市建筑"
+                  class="w-full h-full object-cover"
+                />
+                <div class="slide-caption">
+                  <h3>现代建筑</h3>
+                  <p>城市中的现代建筑之美</p>
+                </div>
+              </a>
+            </div>
+
+            <!-- 轮播项4 -->
+            <div class="carousel-slide">
+              <a href="#" class="block h-full">
+                <img
+                  src="images/wh.jpg"
+                  alt="城市建筑"
+                  class="w-full h-full object-cover"
+                />
+                <div class="slide-caption">
+                  <h3>现代建筑</h3>
+                  <p>城市中的现代建筑之美</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 导航按钮 -->
+          <button id="prevBtn" class="carousel-control left-4">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button id="nextBtn" class="carousel-control right-4">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+
+          <!-- 指示点 -->
+          <div class="carousel-dots">
+            <button class="carousel-dot active" data-index="0"></button>
+            <button class="carousel-dot" data-index="1"></button>
+            <button class="carousel-dot" data-index="2"></button>
+            <button class="carousel-dot" data-index="3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scroll-element">
+        <!--生态文明介绍-->
+        <div class="introduction-card">
+          <div class="card">
+            <h2 class="section-title">
+              <i class="fa fa-leaf"></i>生态文明的内涵
+            </h2>
+            <p>
+              在当今时代，随着工业化和城市化的快速发展，人类社会取得了巨大的进步，但同时也面临着诸多严峻的环境挑战。资源短缺、环境污染、生态破坏等问题日益凸显，威胁着人类的生存与发展。在这样的背景下，生态文明理念应运而生，它为人类社会的可持续发展提供了一种全新的思路和方向。
+            </p>
+            <p>
+              生态文明是一种以尊重自然、顺应自然、保护自然为基本理念的社会文明形态。它强调人类在利用自然资源的同时，必须遵循自然规律，实现人与自然的和谐共生。生态文明不仅仅是对自然环境的保护，更是一种全新的价值观和发展观，它涵盖了经济、政治、文化、社会等多个领域，要求我们在生产、生活和消费的各个方面都遵循生态原则，实现经济、社会与生态的协调发展。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section scroll-element">
+        <div class="konwledgeshow-card">
+          <div class="card">
+            <h2 class="section-title">
+              <i class="fa fa-book"></i>生态文明知识分享
+            </h2>
+            <p>
+              生态文明，是以人与自然、人与人、人与社会和谐共生、良性循环、全面发展、持续繁荣为基本宗旨的社会形态。生态文明，是人类文明发展的一个新的阶段，即工业文明之后的文明形态；生态文明是人类遵循人、自然、社会和谐发展这一客观规律而取得的物质与精神成果的总和。
+            </p>
+            <div class="know-section-container">
+              <div class="know-section">
+                <h3><i class="fa fa-recycle"></i> 为什么要建设生态文明</h3>
+                <ul>
+                  <li>保护生态环境，维护生态平衡</li>
+                  <li>实现可持续发展，保障人类长远利益</li>
+                  <li>促进社会和谐，提升生活质量</li>
+                </ul>
+              </div>
+              <div class="know-section">
+                <h3><i class="fa fa-lightbulb-o"></i> 生态文明建设路径</h3>
+                <ul>
+                  <li>加强生态教育，提高全民环保意识</li>
+                  <li>推动绿色发展，构建生态经济体系</li>
+                  <li>加强生态治理，保护自然生态系统</li>
+                  <li>完善生态制度，保障生态文明建设</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section scroll-element">
+        <!--生态文明发展历程-->
+        <div class="develop-container">
+          <h2 class="section-title"><i class="fa fa-history">发展历程</i></h2>
+          <div class="develop-content">
+            <div class="develop-left-section">
+              <!--左侧时间线-->
+              <div class="timeline-item active" data-target="content-1">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">1972年</span>
+                  <p>中国首次参加联合国人类环境会议</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-target="content-2">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">1992年</span>
+                  <p>可持续发展战略确立</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-target="content-3">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">2007年</span>
+                  <p>科学发展观与生态文明</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-target="content-4">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">2012年</span>
+                  <p>生态文明纳入"五位一体"总体布局</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-target="content-5">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">2018年</span>
+                  <p>生态文明写入宪法</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-target="content-6">
+                <div class="timeline-dot"></div>
+                <div>
+                  <span class="timeline-date">2020年</span>
+                  <p>碳达峰、碳中和目标提出</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="develop-right-section">
+              <!--右侧内容展示-->
+              <!--内容卡片1-->
+              <div id="content-1" class="content-card active">
+                <div>
+                  <img src="images/1972photo.avif" alt="content1" />
+                </div>
+                <h3>1972年：中国首次参加联合国人类环境会议</h3>
+                <p>
+                  1972年6月5日，联合国在瑞典斯德哥尔摩召开了"人类环境会议"，这是世界各国政府共同讨论当代环境问题，探讨保护全球环境战略的第一次国际会议。中国政府派代表团参加了会议。
+                </p>
+                <p>
+                  这次会议后，中国于1973年召开了第一次全国环境保护会议，审议通过了"全面规划、合理布局、综合利用、化害为利、依靠群众、大家动手、保护环境、造福人民"的环境保护工作方针。
+                </p>
+                <div>
+                  <p>"我们只有一个地球" —— 1972年联合国人类环境会议口号</p>
+                </div>
+              </div>
+
+              <!--内容卡片2-->
+              <div id="content-2" class="content-card">
+                <div>
+                  <img src="images/1992photo.avif" alt="content2" />
+                </div>
+                <h3>1992年：可持续发展战略确立</h3>
+                <p>
+                  1992年6月，联合国在巴西里约热内卢召开了"环境与发展大会"，通过了《里约环境与发展宣言》、《21世纪议程》等重要文件，确立了可持续发展的理念和战略。
+                </p>
+                <p>
+                  中国政府积极响应，于1994年制定并发布了《中国21世纪议程 ——
+                  中国21世纪人口、环境与发展白皮书》，成为世界上第一个制定国家级可持续发展战略的国家。
+                </p>
+                <div>
+                  <p>
+                    "人类应享有与自然和谐的方式过健康而富有成果的生活的权利" ——
+                    《里约环境与发展宣言》
+                  </p>
+                </div>
+              </div>
+
+              <!--内容卡片3-->
+              <div id="content-3" class="content-card">
+                <div>
+                  <img src="images/2002photo.avif" alt="content3" />
+                </div>
+                <h3>2007年：科学发展观与生态文明</h3>
+                <p>
+                  2007年，党的十七大首次提出"建设生态文明"的理念，将其作为全面建设小康社会的新要求之一。生态文明建设被纳入中国特色社会主义事业总体布局。
+                </p>
+                <p>
+                  科学发展观强调"以人为本，全面、协调、可持续发展"，为生态文明建设提供了理论指导。这一时期，中国加快了资源节约型、环境友好型社会建设的步伐。
+                </p>
+                <div>
+                  <p>
+                    "建设生态文明，基本形成节约能源资源和保护生态环境的产业结构、增长方式、消费模式"
+                    —— 党的十七大报告
+                  </p>
+                </div>
+              </div>
+
+              <!--内容卡片4-->
+              <div id="content-4" class="content-card">
+                <div>
+                  <img src="images/2012photo.avif" alt="content4" />
+                </div>
+                <h3>2012年：生态文明纳入"五位一体"总体布局</h3>
+                <p>
+                  2012年，党的十八大将生态文明建设纳入中国特色社会主义事业"五位一体"总体布局（经济建设、政治建设、文化建设、社会建设、生态文明建设），明确提出"努力建设美丽中国，实现中华民族永续发展"。
+                </p>
+                <p>
+                  这标志着中国对生态文明建设的认识和实践达到了新的高度，生态文明建设成为国家发展战略的重要组成部分。
+                </p>
+                <div>
+                  <p>
+                    "必须树立尊重自然、顺应自然、保护自然的生态文明理念" ——
+                    党的十八大报告
+                  </p>
+                </div>
+              </div>
+
+              <!--内容卡片5-->
+              <div id="content-5" class="content-card">
+                <div>
+                  <img src="images/2018photo.avif" alt="content5" />
+                </div>
+                <h3>2018年：生态文明写入宪法</h3>
+                <p>
+                  2018年3月，第十三届全国人民代表大会第一次会议通过宪法修正案，将"生态文明"写入宪法，明确规定"国家建设生态文明，推动绿色发展"。
+                </p>
+                <p>
+                  这为生态文明建设提供了宪法保障，将生态文明建设提升到国家意志的法律高度，标志着中国生态文明建设进入了法治化、制度化的新阶段。
+                </p>
+                <div>
+                  <p>
+                    "推动物质文明、政治文明、精神文明、社会文明、生态文明协调发展，把我国建设成为富强民主文明和谐美丽的社会主义现代化强国，实现中华民族伟大复兴"
+                    —— 宪法修正案
+                  </p>
+                </div>
+              </div>
+
+              <!--内容卡片6-->
+              <div id="content-6" class="content-card">
+                <div>
+                  <img src="images/R-C.jfif" alt="content6" />
+                </div>
+                <h3>2020年：碳达峰、碳中和目标提出</h3>
+                <p>
+                  2020年9月，习近平主席在第七十五届联合国大会一般性辩论上宣布："中国将提高国家自主贡献力度，采取更加有力的政策和措施，二氧化碳排放力争于2030年前达到峰值，努力争取2060年前实现碳中和。"
+                </p>
+                <p>
+                  碳达峰、碳中和目标的提出，是中国积极应对气候变化、推动生态文明建设的又一重大战略决策，彰显了中国在全球环境治理中的责任担当。
+                </p>
+                <div>
+                  <p>
+                    "中国将碳达峰、碳中和纳入生态文明建设整体布局，正在制定碳达峰行动计划，广泛深入开展碳达峰行动，支持有条件的地方和重点行业、重点企业率先达峰"
+                    —— 习近平主席
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section scroll-element">
+        <div class="datashow-container">
+          <h2 class="section-title">
+            <i class="fa fa-bar-chart"></i>生态环境公报
+          </h2>
+          <video controls>
+            <source src="video/2024生态环境状况公报.mp4" type="video/mp4" />
+            您的浏览器不支持 HTML5 video 标签。
+          </video>
+        </div>
+      </section>
+
+      <!-- 生态建设成果展示 -->
+      <section class="section scroll-element">
+        <div class="gradient-background">
+          <h2 class="section-title">
+            <i class="fa fa-flask"></i>生态建设成果展示
+          </h2>
+          <div class="exhibition-container">
+            <div class="exhibition-item">
+              <img
+                src="images/新疆阿尔金山国家级自然保护区.jpg"
+                alt="新疆自然保护区"
+              />
+              <div class="item-overlay">
+                <h3>新疆阿尔金山国家级自然保护区</h3>
+                <p>
+                  新疆阿尔金山国家级自然保护区有国家一级保护动物17种，生物多样性日益丰富
+                </p>
+              </div>
+            </div>
+            <div class="exhibition-item">
+              <img
+                src="images/广东湛江红树林国家自然保护区.webp"
+                alt="广东湛江红树林国家自然保护区"
+              />
+              <div class="item-overlay">
+                <h3>广东湛江红树林国家自然保护区</h3>
+                <p>
+                  红树林生态系统质量和稳定性提升，为诸多海洋生物和鸟类提供了大量的栖息和觅食环境。
+                </p>
+              </div>
+            </div>
+            <div class="exhibition-item">
+              <img src="images/乌江中游的江界河.jpg" alt="乌江中游的江界河" />
+              <div class="item-overlay">
+                <h3>乌江中游的江界河</h3>
+                <p>
+                  巍巍乌蒙山下，乌江蜿蜒向北，一路奔腾汇入长江；北盘江也由此跌宕向南，滚滚涌向珠江。
+                </p>
+              </div>
+            </div>
+            <div class="exhibition-item">
+              <img src="images/贵州赤水大瀑布.jpg" alt="贵州赤水大瀑布" />
+              <div class="item-overlay">
+                <h3>贵州赤水大瀑布</h3>
+                <p>
+                  随着生态环境的不断改善，水土保持、固碳释氧、调节气候能力的逐步增强，水质明显提升
+                </p>
+              </div>
+            </div>
+            <div class="exhibition-item">
+              <img src="images/塞罕坝.webp" alt="塞罕坝" />
+              <div class="item-overlay">
+                <h3>塞罕坝林场建设</h3>
+                <p>塞罕坝机械林场治沙止漠 筑牢绿色生态屏障</p>
+              </div>
+            </div>
+            <div class="exhibition-item">
+              <img
+                src="images/三洲丘坊清洁型生态小流域.webp"
+                alt="三洲丘坊清洁型生态小流域"
+              />
+              <div class="item-overlay">
+                <h3>生态小流域</h3>
+                <p>“绿水相间、绿带成网、绿环村庄”的水美乡村</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--------------Footer--------------->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>姓名：蓝舒芬 | 班级：计算机23-3班 | 学号：231002618</p>
+      </div>
+    </footer>
+
+    <!--js样式-->
+    <script src="js/carousel.js"></script>
+    <script src="js/Scroll.js"></script>
+  </body>
+</html>
